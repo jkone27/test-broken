@@ -1,4 +1,4 @@
-// Learn more about F# at http://docs.microsoft.com/dotnet/fsharp
+// cannot see the lib namespace, even though is built
 open My.Custom.Lib
 open System
 
@@ -9,6 +9,7 @@ let from whom =
 [<EntryPoint>]
 let main argv =
     
-    let x = PetsProvided.GetSamples()
+    //crashes on this line
+    //let x = BigOpenApi.
 
     0 // return an integer exit code

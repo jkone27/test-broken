@@ -3,17 +3,8 @@
 [<AutoOpen>]
 module Lib =
     
-    open FSharp.Data
+    //open FSharp.Data
     open SwaggerProvider
-    
-    [<Literal>]
-    let path = __SOURCE_DIRECTORY__ + "/../pets.json"
-
-    type PetsProvided = JsonProvider<path>
-
-    type PetsProvided2 = JsonProvider<path>
-
-    type PetsProvided3 = JsonProvider<path>
 
     type BigOpenApi = OpenApiClientProvider<"https://petstore.swagger.io/v2/swagger.json">
 
